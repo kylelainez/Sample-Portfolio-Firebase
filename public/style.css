@@ -1,0 +1,98 @@
+body{
+  background-color: white;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 30px;
+  padding-left: 300px;
+  color: white;
+  height: 125px;
+  background-color: #0EB57D;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  vertical-align: top;
+
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  text-align: center;
+  background-color: white;
+  height: 20px;
+}
+.sidenav {
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  bottom: 100px;
+  overflow-x: hidden;
+  padding-top: 200px;
+  padding-left: 50px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color:black;
+  display: block;
+  transition: 0.4s;
+}
+
+.sidenav a:hover {
+  color: #00FF00;
+}
+
+.main {
+  margin-top: -20px;
+  margin-left: 300px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.rotateimg180 {
+  -webkit-transform:rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+img{
+  margin-top: 50px;
+  vertical-align: bottom;
+  align-self: start;
+  border-radius: 50%;
+}
+.small{
+  color: white;
+  font-size: 20px;
+}
+#exp{
+  display: none ;
+}
+#proj{
+  display: none;
+}
+#train{
+  display: none;
+}
+#skills{
+  display: none;
+}
+.text{
+  font-size: 40px;
+  color: #0eb58b;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

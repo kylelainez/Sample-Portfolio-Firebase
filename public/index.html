@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Kyle Lainez's page</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.9.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.9.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.9.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.9.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.9.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body >
+    
+    <header>
+      Kyle Adrian A. Lainez<br>
+      <div class="small">
+        BS Computer Engineering <br>
+        3643 Lingayen St. Sta. Mesa, Manila<br>
+        09260359155
+      </div>
+      
+    </header>
+    <div>
+      <img src="image.JPG" height="180px"class="rotateimg180" >  
+    </div>
+    
+    <footer>Copyright &copy; 2020 &nbsp;&nbsp;&nbsp;&nbsp; Wizy.io</footer>
+
+    <div class="sidenav">
+      <a href="#Experience" id ="Experience" onclick="expOnClick()">Experience</a>
+      <a href="#Projects" id="Projects" onclick="projOnClick()">Projects</a>
+      <a href="#Training" id="Training" onclick="trainOnClick()">Training</a>
+      <a href="#Skills" id="Skills" onclick="skillsOnClick()">Skills</a>
+    </div>
+    
+    
+    <div class="main"> 
+      <div id="exp">
+        <div class="text">Specified Contractors and Development, Inc</div>
+        Intern<br>
+        April 2018 - June 2018<br>
+        38 Xavierville Ave, Quezon City, 1108 Metro Manila<br>
+        <br>
+        <div class="text"> Bel Air Internet</div>
+        Intern<br>
+        April 2019 - June 2019<br>
+        15301 Ventura Blvd d250, Sherman Oaks, CA 91403
+      </div>
+      <div id="proj">
+        <div class="text"> Automated Honey Harvester using Android Application</div>
+        Thesis, Android<br>
+        <div class="text">Spot it - Cea commodities Application</div>
+        Android App<br>
+        <div class="text">Address Book System</div>
+        C++<br>
+        <div class="text">Cinema Reservation System</div>
+        C++<br>
+        <div class="text">Queueing System</div>
+        Java App<br>
+        <div class="text">Obstacle Avoiding Robot</div>
+        Arduino<br>
+        <div class="text">Sumobot</div>
+        Arduino
+      </div>
+      <div id="train">
+        Wizy.io Web Development BootCamp<br>
+        2020
+      </div>
+      <div id="skills">
+        Java<br>
+        C++<br>
+        Python<br>
+        Html<br>
+        CSS<br>
+        JavaScript<br>
+        AutoCAD<br>
+        Arduino<br>
+        Circuit Design<br>
+      </div>
+    </div>
+
+
+    <script>
+      function expOnClick(){
+        document.getElementById("exp").style.display = "block";
+        document.getElementById("proj").style.display = "none";
+        document.getElementById("train").style.display = "none";
+        document.getElementById("skills").style.display = "none";
+      }
+      function projOnClick(){
+        document.getElementById("exp").style.display = "none";
+        document.getElementById("proj").style.display = "block";
+        document.getElementById("train").style.display = "none";
+        document.getElementById("skills").style.display = "none";
+      } 
+      function trainOnClick(){
+        document.getElementById("train").style.display = "block";
+        document.getElementById("exp").style.display = "none";
+        document.getElementById("proj").style.display = "none";
+        document.getElementById("skills").style.display = "none";
+      }
+      function skillsOnClick(){
+        document.getElementById("skills").style.display = "block";
+        document.getElementById("train").style.display = "none";
+        document.getElementById("exp").style.display = "none";
+        document.getElementById("proj").style.display = "none";
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        
+        } catch (e) {
+          console.error(e);
+        
+        }
+      });
+    </script>
+  </body>
+</html>
